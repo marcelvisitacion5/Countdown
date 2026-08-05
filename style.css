@@ -4,7 +4,8 @@
     box-sizing:border-box;
 }
 
-html,body{
+html,
+body{
 
     width:100%;
     height:100%;
@@ -18,7 +19,9 @@ html,body{
 body{
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
 }
@@ -35,85 +38,44 @@ body{
 
     color:#1B53C6;
 
-    font-size:32px;
-
-    font-weight:700;
-
-}
-
-#countdown{
-
-    display:flex;
-
-    gap:18px;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-.unit{
-
-    text-align:center;
-
-}
-
-.flip{
-
-    width:120px;
-
-    height:120px;
-
-    background:#1B53C6;
-
-    color:white;
-
-    border-radius:15px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:60px;
+    font-size:34px;
 
     font-weight:bold;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
 
-    transition:.5s;
+/* Change FlipDown colors */
+
+.flipdown.flipdown__theme-dark .rotor,
+.flipdown.flipdown__theme-dark .rotor-leaf-front,
+.flipdown.flipdown__theme-dark .rotor-leaf-rear{
+
+    background:#1B53C6 !important;
+
+    color:#fff !important;
 
 }
 
-.unit span{
+.flipdown.flipdown__theme-dark .rotor-top,
+.flipdown.flipdown__theme-dark .rotor-bottom{
 
-    display:block;
-
-    margin-top:12px;
-
-    color:#444;
-
-    font-size:15px;
-
-    letter-spacing:2px;
+    background:#1B53C6 !important;
 
 }
 
-@media(max-width:700px){
+.flipdown{
 
-.flip{
-
-width:80px;
-height:80px;
-font-size:40px;
+    margin:auto;
 
 }
 
-.unit span{
+@media(max-width:768px){
 
-font-size:12px;
+.flipdown{
+
+transform:scale(.72);
+
+transform-origin:center;
 
 }
 
